@@ -27,8 +27,8 @@
 | `student_predictor.cpp` | 2 bit 브렌치 예측기 기능을 직접 구현한 소스 코드 |
 
 -------
-## ** 실행 방법 (Build & Run Instructions)**
-### ** Linux & Mac**
+## 실행 방법 (Build & Run Instructions)
+###  Linux & Mac
 ```bash
 (in target directory)
 mkdir build && cd build
@@ -48,7 +48,21 @@ make clean
 
 ---
 
-## **4. 구현한 예측기 설명 (2-bit Predictor)**
+## 입력 데이터
+
+### **실험을 위해 두가지 유형의 입력 데이터가 제공된다**
+1. Synthesized branch flow (합성된 브랜치 흐름)
+- `if`문과 `중첩 for` 루프를 포함하는 규칙적인 반복 패턴을 가진 데이터.
+- 단순한 제어 흐름을 갖기 때문에 특정 예측기(예: 2-bit predictor)에 유리할 수 있음.
+
+2. SPEC2006
+- *SPEC CPU 2006* 벤치마크 데이터를 사용.
+- 실제 CPU 워크로드에서 예측기의 성능을 측정하는 데 활용됨.
+- 더 복잡한 브랜치 패턴을 포함하여, 보다 일반적인 성능 평가가 가능.
+
+  
+----
+##  구현한 예측기 설명 (2-bit Predictor)**
 
 ### **📌 예측 함수 (`get_pred`)**
 ```cpp
