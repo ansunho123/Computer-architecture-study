@@ -8,7 +8,9 @@
 🔗 **과제 목록**
 - [📌 computer-arch-hw1](https://github.com/ansunho123/Computer-architecture-study/tree/main/computer-arch-hw1) - **2-bit predictor 구현**
   
-  - 1-bit predictor에서 2-bit predictor로 C 코드로 변환하는 실습
+  - 1-bit predictor의 한계를 이해하고, 2-bit predictor로 개선하는 과정을 직접 구현
+  - 분기 예측(Branch Prediction)과 성능 향상 기법에 대한 실습
+  - C++을 활용한 예측기 설계 및 최적화 경험
     
 
     
@@ -21,7 +23,7 @@
 ## 🛠️ 실습 목표
 각 실습과 과제를 수행하면서 다음 개념을 학습할 수 있습니다:
 
-✅ 
+✅  기본적인 CPU 예측 기법 (2-bit predictor)
 
 ✅ 
 
