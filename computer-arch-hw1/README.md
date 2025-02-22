@@ -1,26 +1,34 @@
-# Branch Predictor 과제 (Computer Architecture 2023)
+# 🖥️ 컴퓨터 구조 과제 1 (Computer Architecture 2023)
 
-## **1. 개요**
+## 📌 과제 내용
 이 프로젝트는 **브랜치 예측기(Branch Predictor)**를 설계하고 구현하는 과제입니다. 기본적으로 1-bit predictor가 제공되었으며, 이를 개선하여 **더 높은 정확도를 갖는 예측기를 개발**하는 것이 목표입니다.
 
 본 프로젝트에서는 **2-bit Saturating Counter**를 활용한 예측기를 구현하였으며, 이를 통해 브랜치 예측 성능을 높였습니다.
 
 ---
 
-## **2. Branch Predictor란?**
+## **Branch Predictor란?**
 **Branch Predictor(브랜치 예측기)**는 CPU가 분기(Branch) 명령어를 실행할 때 **해당 분기가 Taken(실행됨)인지 Not Taken(실행되지 않음)인지 예측**하는 역할을 합니다.
 
 브랜치 예측이 중요한 이유는 **파이프라인 성능 향상**을 위해 미리 예측을 수행하여 불필요한 실행 지연을 줄이기 위함입니다.
 
-### **📌 2-bit Saturating Counter 방식**
+### **2-bit Saturating Counter 방식**
 1. **각 브랜치 명령어에 대해 2-bit 상태 값을 저장** (0, 1, 2, 3)
 2. **값이 2 이상이면 Taken(1)으로 예측, 2 미만이면 Not Taken(0)으로 예측**
 3. 예측이 틀릴 경우 상태 값을 증가(또는 감소)시켜 **학습**
 
 ---
+## 📂 파일 구성
 
-## **3. 실행 방법 (Build & Run Instructions)**
-### **🔹 Linux & Mac**
+| 파일명       | 설명 |
+|-------------|-----------------------------------------------------|
+| `predictor_main.c`    | `predictor` 함수의 를 테스트하는 코드 |
+| `student_predictor.hpp`  | 브랜치 예측기 클래스 your_own의 정의 **헤더 파일** |
+| `student_predictor.cpp` | 2 bit 브렌치 예측기 기능을 직접 구현한 소스 코드 |
+
+-------
+## ** 실행 방법 (Build & Run Instructions)**
+### ** Linux & Mac**
 ```bash
 (in target directory)
 mkdir build && cd build
@@ -37,9 +45,6 @@ make
 ```bash
 make clean
 ```
-
-### **🔹 Windows**
-과제에 첨부된 문서를 참고하여 CMake를 통해 빌드하세요.
 
 ---
 
@@ -135,5 +140,5 @@ total : 10000 branch, correct : 8500 , ratio : 85.0%
 
 ---
 
-이 프로젝트는 기본적인 2-bit branch predictor를 구현하는 실습이었으며, 이를 확장하여 다양한 예측 기법을 연구할 수 있습니다. 🚀
+이 프로젝트는 기본적인 2-bit branch predictor를 구현하는 실습이었으며, 이를 확장하여 다양한 예측 기법을 연구할 수 있습니다.
 
