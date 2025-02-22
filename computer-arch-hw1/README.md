@@ -124,7 +124,7 @@ void your_own::update(int pc, int res)
 
 ---
 
-## **5. 실행 결과 예시**
+## **실행 결과 예시**
 ```bash
 total : 10000 branch, correct : 8500 , ratio : 85.0%
 ```
@@ -134,20 +134,20 @@ total : 10000 branch, correct : 8500 , ratio : 85.0%
 
 ---
 
-## **6. 결론 및 개선점**
-### **🔹 장점**
+## **결론 및 개선점**
+### ** 장점 **
 - **1-bit predictor보다 향상된 정확도 제공**
 - 간단한 구현 방식으로도 **비교적 높은 예측 성능을 보임**
 - 실제 CPU에서도 사용되는 **2-bit predictor 방식**을 적용
 
-### **🔹 개선 가능점**
+### ** 개선 가능점**
 - **Global History 사용** → 더 정교한 예측 가능
 - **Tournament Predictor** → 다양한 방식 조합하여 더 높은 성능
 - **Perceptron Branch Predictor** → 신경망 기반 예측 가능
 
 ---
 
-## **7. 참고 자료**
+## ** 참고 자료**
 - "Computer Architecture: A Quantitative Approach" - John L. Hennessy, David A. Patterson
 - SPEC CPU2006 벤치마크 공식 문서
 - 과제 제공 문서
