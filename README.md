@@ -14,7 +14,13 @@
     
 
     
-- [📌 computer-arch-hw2](https://github.com/ansunho123/Computer-architecture-study/tree/main/computer-arch-hw2) - 과제
+- [📌 computer-arch-hw2](https://github.com/ansunho123/Computer-architecture-study/tree/main/computer-arch-hw2) -
+  **AVX-512 SIMD** 명령어와 **Blocking** 기법을 활용하여 **행렬 곱셈(Matrix Multiplication)** 연산을 최적화
+
+  -  AVX-512 SIMD 명령어
+  -  Blocking 기법
+  -  메모리 접근 패턴 최적화 (캐시 미스 줄이기) for문 j -> i -> k
+  
 
   
 
@@ -25,7 +31,7 @@
 
 ✅  기본적인 CPU 예측 기법 (2-bit predictor)
 
-✅ 
+✅ SIMD, Blocking, 캐시 최적화 기법을 활용하여 최적화
 
 
 ****************
