@@ -107,7 +107,20 @@ void OptimizedMatrixMultiplication(int **A, int **B, int **C, int size) {
 ##  결론
 ✔ **기존 행렬 곱셈에서 SIMD와 Blocking 기법을 적용하여 속도를 향상시킴**  
 ✔ **`j → i → k` 순서로 연산을 수행하여 캐시 미스를 줄이고, 메모리 접근을 최적화**  
-✔ **최적화된 코드(`OptimizedMatrixMultiplication`)는 기존 코드보다 **최대 16배 빠름!**   
+✔ **최적화된 코드(`OptimizedMatrixMultiplication`)는 기존 코드보다 **최대 16배 빠름!**  
+
+✅ 이 과제를 통해 고성능 컴퓨팅에서 메모리 접근 패턴이 성능에 미치는 영향을 학습하고, 이를 SIMD, Blocking, 캐시 최적화 기법을 활용하여 최적화하는 방법을 실습했습니다.
+✅  AVX-512 SIMD 명령어
+- SIMD (Single Instruction, Multiple Data) 개념을 이해하고, AVX-512를 활용하여 여러 개의 데이터를 한 번에 연산하는 방법을 학습
+- _mm512_loadu_si512, _mm512_set1_epi32, _mm512_mullo_epi32, _mm512_add_epi32 등의 AVX-512 명령어를 사용하여 벡터 연산 수행
+✅ Blocking 기법
+- Blocking을 적용하여 행렬 곱셈의 캐시 효율성을 극대화하는 방법을 학습
+- CPU 캐시는 공간 지역성을 활용하여 데이터를 저장하므로, 작은 블록 단위로 데이터를 읽고 계산하면 성능 향상
+✅ 메모리 접근 최적화 (캐시 미스 줄이기)
+- 행렬 데이터를 메모리에서 어떻게 로드하는지에 따라 성능이 달라진다는 점을 학습
+- i → j → k 대신 j → i → k 순서로 반복문을 최적화하여 캐시 미스를 줄이는 방법을 적용
+
+
 
 
 
