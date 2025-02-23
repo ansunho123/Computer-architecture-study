@@ -109,7 +109,8 @@ void OptimizedMatrixMultiplication(int **A, int **B, int **C, int size) {
 ✔ **`j → i → k` 순서로 연산을 수행하여 캐시 미스를 줄이고, 메모리 접근을 최적화**  
 ✔ **최적화된 코드(`OptimizedMatrixMultiplication`)는 기존 코드보다 **최대 16배 빠름!**        
 
-✅ 이 과제를 통해 고성능 컴퓨팅에서 메모리 접근 패턴이 성능에 미치는 영향을 학습하고, 이를 SIMD, Blocking, 캐시 최적화 기법을 활용하여 최적화하는 방법을 실습했습니다.  
+✅ 이 과제를 통해 고성능 컴퓨팅에서 메모리 접근 패턴이 성능에 미치는 영향을 학습하고, 이를 SIMD, Blocking, 캐시 최적화 기법을 활용하여 최적화하는 방법을 실습했습니다.   
+
 ✅  AVX-512 SIMD 명령어  
 - SIMD (Single Instruction, Multiple Data) 개념을 이해하고, AVX-512를 활용하여 여러 개의 데이터를 한 번에 연산하는 방법을 학습  
 - _mm512_loadu_si512, _mm512_set1_epi32, _mm512_mullo_epi32, _mm512_add_epi32 등의 AVX-512 명령어를 사용하여 벡터 연산 수행
