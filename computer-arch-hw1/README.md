@@ -1,6 +1,6 @@
 # 🖥️ 컴퓨터 구조 과제 1 (Computer Architecture 2023)
 
-## 📌 과제 내용
+## 과제 내용
 이 프로젝트는 **브랜치 예측기(Branch Predictor)**를 설계하고 구현하는 과제입니다. 기본적으로 1-bit predictor가 제공되었으며, 이를 개선하여 **더 높은 정확도를 갖는 예측기를 개발**하는 것이 목표입니다.
 
 본 프로젝트에서는 **2-bit Saturating Counter**를 활용한 예측기를 구현하였으며, 이를 통해 브랜치 예측 성능을 높였습니다.
@@ -64,7 +64,7 @@ make clean
 ----
 ##  구현한 예측기 설명 (2-bit Predictor)**
 
-### **📌 예측 함수 (`get_pred`)**
+### ** 예측 함수 (`get_pred`)**
 ```cpp
 int your_own::get_pred(int pc)
 {
@@ -86,7 +86,7 @@ int your_own::get_pred(int pc)
   - 값이 `2 이상`이면 **Taken(1)**
   - 값이 `1 이하`이면 **Not Taken(0)**
 
-### **📌 업데이트 함수 (`update`)**
+### ** 업데이트 함수 (`update`)**
 ```cpp
 void your_own::update(int pc, int res)
 {
